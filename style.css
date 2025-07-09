@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+nav {
+        
+    margin: 37px auto;
+
+}
+nav ul  {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 12px;
+    list-style-type: none;
+    gap: 22px;
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration-line: none;    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;      /* Menu links (Home, Projects, Contact...) */
+    font-weight: 600;     /* Slightly bold for visibility */
+    letter-spacing: 0.5px;   
+    padding: 0px 16px;
+    
+}
+
+nav a:hover {
+  color: #ff4c60; 
+}
+#imgnav{
+    border: 1px solid rgba(238, 238, 238, 0.288)   ;
+    border-radius: 100% ;
+    position: relative;
+    left: -27vw; 
+    top: -3.5vh;
+    cursor: pointer;
+}
+#left{
+    position: relative;
+    left: -359px;
+    
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-style: oblique;
+    cursor: pointer;
+}
+/* nav done here lets make main content */
+.container1{
+    /* border: 2px solid red ; */
+    display: flex;
+   position: relative;
+    
+}
+.hero{
+    /* border: 2px solid white; */
+    width: 67vw;
+}
+.hero h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;  
+    letter-spacing: 2px;
+text-transform: uppercase;
+font-weight: 500;
+color: #999999;          /* or a light gray */
+
+}
+.hero h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 65px;
+}
+#hero-text{
+    color: #ff4c60;
+}
+.hero h3{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+
+}
+.hero p{
+font-family: 'Poppins', sans-serif;
+font-size: 16px; 
+font-weight: 700;
+color: grey;
+line-height: 27px;  
+
+}
+#imghero{
+    filter: contrast(1.30);
+    position: absolute;
+    right: -3px;
+    top: -32px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+.cursor {
+  display: inline-block;
+  color: #ff4c60;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+  font-size: 34px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.red-text {
+  color: #ff4c60;
+  font-weight: bold;
+}
+.projects{
+    /* border: 2px solid  */
+    margin: 93px auto;
+}
+.project1 {
+    border: 2px solid ;
+    width: 29vw;
+    /* height: 62vh; */
+    border-radius: 14px;
+    margin: 90px -45px;     
+    
+}
+.pmargin{
+    position: relative;
+    top: -31px;
+    font-size: 2.27rem;
+    text-align: center;
+}
+.space{
+    height: 22vh;
+}
+
+#netflix{
+    margin: 0px 30px;
+    border: 2px solid grey;
+    border-radius: 16px;
+}
+.project1 h3{
+    text-indent: 4vh;
+    margin: 12px auto;
+    font-weight: 600;
+    font-size: 22px;
+    font-family:sans-serif;
+    text-indent: 4vh;
+    margin: 12px auto;
+    font-weight: 600;
+    font-size: 22px;
+    font-family:sans-serif;
+}
+.project1 p{
+    margin: 14px auto;
+    width: 24vw;
+    
+}
+
+.btn{
+    padding: 8px 10px;
+    background-color: grey ; 
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 29px  ;
+    cursor: pointer;
+    font-size: 1.03rem;
+    
+}
+.buttons{
+    display: flex;
+    border: 2px solid black;
+}
+.code{
+    margin: 0px 2px;
+    padding: 0px 14px;
+}
+.projects{
+    display: flex;
+    position: relative;
+    gap: 4px;
+    justify-content: center;
+    /* border: 2px solid red ; */
+
+    
+}
+.project2{
+    border: 2px solid  ;
+    width: 31vw;
+    /* height: 62vh; */
+    margin: 90px auto;
+    border-radius: 14px;
+
+    
+}
+#calculater{
+    margin: 0px 25px;
+    border: 2px solid grey;
+    border-radius: 16px;
+    
+}
+.project2 p{
+    margin: 14px auto;
+    width: 24vw;
+    
+}
+.project2txt h3{
+    text-indent: 4vh;
+    margin: 12px auto;
+    font-weight: 600;
+    font-size: 22px;
+    font-family:sans-serif;
+    
+
+}
+.btn a {
+    text-decoration-line: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 3px;
+    margin: 3px;
+
+}
+ a{
+    text-decoration-line: none;
+} 
+.code{
+     display: flex;
+     justify-content: center;
+     align-items:  center;
+}
+#imghero {
+    z-index: 0; /* Send image to back */
+}
+
+.project1txt p {
+  margin: 14px auto;
+  width: 24vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #cccccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+  z-index: 2;
+  position: relative;
+  right: 54px;
+}
+
+.btn {
+  padding: 8px 14px;
+  background-color: grey;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4c60;
+}
+
+.code {
+  padding: 8px 20px;
+}
