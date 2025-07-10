@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,13 +16,13 @@
         <ul>
             <li><img id="imgnav" width="85px" src="circlepic.png" alt="img not found"> </li>
             <li><span id="left">HAK1580</span> </li>
-            <li><a href="blank//">HOME</a> </li>
-            <li><a href="blank//">CONTACT</a> </li>
-            <li><a href="blank//">PROJECTS</a> </li>
+            <li><a class="nav-link" href="#home">HOME</a> </li>
+            <li><a class="nav-link" href="#contacts">CONTACT</a> </li>
+            <li><a class="nav-link" href="#projects">PROJECTS</a> </li>
         </ul>
     </nav>
     <!-- nav ends here now my main content below -->
-    <div class="container1">
+    <div class="container1" id="home">
         <div class="hero">
             <h2>WELCOME TO MY WORLD </h2><br><br>
             <!-- <h1>HI, I AM &nbsp;<span id="hero-text">M.HASSAN ALI KHAN </span> </h1><br>
@@ -38,17 +40,17 @@
         <img id="imghero" width="335px" src="heroimg.png">
     </div>
     <div class="space">
- 
+
     </div>
-                                        <!-- Here starts the projects section  -->
-    <div class="projects">
-        <h1  class="pmargin">PROJECTS </h1>   
+    <!-- Here starts the projects section  -->
+    <div class="projects" id="projects">
+        <h1 class="pmargin">PROJECTS </h1>
 
         <div class="project1">
             <img id="netflix" width="310vw" src="netflix ss.jpg" alt="img not found">
             <div class="project1txt">
                 <h3>PROJECT #1</h3>
-                <p c>Netflix UI Clone built using vanilla <br> Html + Css +Javascript </p>
+                <p>Netflix UI Clone built using vanilla <br> Html + Css +Javascript </p>
                 <div class="buttons">
                     <a class="btn" href="https://hak1580.github.io/NETFLIX-CLONE/" target="_blank">LIVE DEMO</a>
                     <a class="btn code" href="https://github.com/hak1580/NETFLIX-CLONE" target="_blank">CODE</a>
@@ -58,16 +60,16 @@
             </div>
 
         </div>
-       
+
 
         <div class="project2">
-            <img  id="calculater" height="327vh" width="340vw" src="calculater app.PNG" alt="img not found">
+            <img id="calculater" height="327vh" width="340vw" src="calculater app.PNG" alt="img not found">
             <div class="project2txt">
                 <h3>PROJECT #2</h3>
-                <p> Calculater APP using<br> Html + Css +Javascript </p>
+                <p> Calculator APP using<br> Html + Css +Javascript </p>
                 <div class="buttons">
-                    <a target="_blank"  href="https://hak1580.github.io/CALCULATER-APP/" class="btn">LIVE DEMO </a>
-                    <a target="_blank"  href="https://github.com/HAK1580/CALCULATER-APP" class="btn code">CODE </a>
+                    <a target="_blank" href="https://hak1580.github.io/CALCULATER-APP/" class="btn">LIVE DEMO </a>
+                    <a target="_blank" href="https://github.com/HAK1580/CALCULATER-APP" class="btn code">CODE </a>
 
                 </div>
 
@@ -75,8 +77,61 @@
 
         </div>
     </div>
-     <!-- PROJECTS DONE HERE NOW ADD CONTACT BELOW AND INTERACTIVITY WITH JS  -->
-    
+    <!-- PROJECTS DONE HERE NOW ADD tech stacks BELOW AND INTERACTIVITY WITH JS  -->
+
+    <div class="skills">
+        <h3> TECH STACK </h3>
+        <div class="techstack">
+            <img width="91px" src="svg/html.svg" alt="img not found ">
+            <img width="91px" src="svg/css.svg" alt="img not found ">
+            <img width="71px" height="78px" src="svg/javascript.png" alt="img not found ">
+            <img width="85px" src="svg/react-js.svg" alt="img not found ">
+            <img width="85px" src="svg/tailwind-css.svg" alt="img not found ">
+
+        </div>
+    </div>
+
+    <!-- techskills done here now going for contacts  -->
+    <div class="space"> </div>
+    <div class="space"> </div>
+    <div class="line">
+        <hr>
+
+    </div>
+    <div class="contacts" id="contacts">
+        <h1
+            style="text-align: center; font-size: 2.7rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgba(255, 255, 255, 0.938); ">
+            CONTACT ME </h1>
+        <div class="email">
+            <img width="40" src="svg/email.png">
+            Email Address : &nbsp; <span id="espan"> aliofficial1580630@gmail.com </span>
+
+
+        </div>
+        <div class="github">
+            <img width="47" src="svg/github.svg">
+            Github : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="https://github.com/HAK1580"> Visit
+                HAK1580</a>
+
+
+        </div>
+        <div class="linkdin">
+            <img width="55" src="svg/linkedin.svg">
+            LINKEDIN : &nbsp;&nbsp; <a target="_blank"
+                href="https://www.linkedin.com/in/muhammad-hassan-ali-khan-49a965281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                Visit Profile on LINKEDIN</a>
+
+
+        </div>
+        <div class="tiktok">
+            <img width="52" src="svg/tiktok.svg">
+            TikTok : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="https://www.tiktok.com/@codewithme._.01">
+                View Work on TikTok</a>
+
+
+        </div>
+    </div>
+
     <script src="script.js"> </script>
 </body>
 
