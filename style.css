@@ -650,3 +650,7 @@
          position: relative;
      }
  }
+ footer{
+    text-align: center;
+    margin: 22px auto;
+ }
