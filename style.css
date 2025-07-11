@@ -406,11 +406,12 @@
      position: absolute;
      left: 0;
      bottom: 0;
+     font-size: 3rem;
      /* animation: animateskillsy 1s ease-out alternate-reverse infinite, animateskillsx 4s linear alternate infinite; */
  }
 
  .projects {
-     animation: animatex 3s linear alternate-reverse;
+     animation: animatex 1.5s  linear alternate-reverse;
  }
 
  @keyframes animateproject {
