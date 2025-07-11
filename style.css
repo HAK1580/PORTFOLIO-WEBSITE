@@ -375,7 +375,7 @@
      }
 
  }
-
+/* 
  @keyframes animateskillsy {
      from {
          bottom: 0%;
@@ -385,7 +385,7 @@
          bottom: 42%;
      }
 
- }
+ } */
 
  @keyframes animateskillsx {
      from {
@@ -406,7 +406,7 @@
      position: absolute;
      left: 0;
      bottom: 0;
-     animation: animateskillsy 1s ease-out alternate-reverse infinite, animateskillsx 4s linear alternate infinite;
+     /* animation: animateskillsy 1s ease-out alternate-reverse infinite, animateskillsx 4s linear alternate infinite; */
  }
 
  .projects {
