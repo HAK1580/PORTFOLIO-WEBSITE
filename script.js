@@ -37,3 +37,35 @@ document.querySelectorAll('.nav-link').forEach(link => {
     }
   });
 });
+// slider effect 
+
+let currentIndex = 0;
+const track = document.querySelector('.slider-track');
+const cards = document.querySelectorAll('.project-card');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+function updateSlider() {
+  const cardWidth = cards[0].offsetWidth + 30; // card + gap
+  track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < cards.length - 1) {
+    currentIndex++;
+    updateSlider();
+  }
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+  }
+});
+
+  function scrollSlider(direction) {
+    const slider = document.querySelector('.project-slider');
+    const scrollAmount = 350;
+    slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
