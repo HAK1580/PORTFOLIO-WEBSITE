@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
  body {
-     background-color: black;  
+     background-color:black;
     color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
  }
@@ -15,7 +15,7 @@
  nav {
 
      margin: 27px auto;
-
+ 
  }
 
  nav ul {
@@ -351,7 +351,8 @@
 
  /* now my tech stacks starts from below  */
  .skills {
-     /* border: 2px solid red ; */     color: red ;
+     /* border: 2px solid red ; */   
+     color: red ;
      font-size: 2.27rem;
      text-indent: 16px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -369,7 +370,7 @@
      width: 65vw;
      position: absolute;
 
-
+git add 
      animation: animatex 4s linear alternate infinite;
 
  }
