@@ -1,7 +1,8 @@
-const line1 = "M.HASSAN ALI KHAN";
+const line1 = "M.Hassan Ali Khan";
 const line2 = "a Front End Developer.";
 let i = 0;
 let j = 0;
+
 
 function typeLine1() {
   if (i < line1.length) {

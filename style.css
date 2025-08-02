@@ -69,8 +69,18 @@
  .container1 {
      /* border: 2px solid red ; */
      display: flex;
+     margin: 25px ;
      position: relative;
+     animation: headfromright 0.7s ease-in;
 
+ }
+ @keyframes headfromright{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
  }
 
  .hero {
