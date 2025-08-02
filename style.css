@@ -3,9 +3,9 @@
      padding: 0;
  }
 
- /* html {
+ html {
   scroll-behavior: smooth;
-} */
+}
  body {
      background-color: black;  
     color: rgba(255, 255, 255, 0.959);
@@ -14,7 +14,7 @@
 
  nav {
 
-     margin: 37px auto;
+     margin: 27px auto;
 
  }
 

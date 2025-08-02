@@ -25,19 +25,19 @@ function typeLine2() {
 
 window.onload = typeLine1;
 
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 40, // adjust for header height if needed
-        behavior: 'smooth'
-      });
-    }
-  });
-});
+// document.querySelectorAll('.nav-link').forEach(link => {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const targetId = this.getAttribute('href');
+//     const targetElement = document.querySelector(targetId);
+//     if (targetElement) {
+//       window.scrollTo({
+//         top: targetElement.offsetTop - 40, // adjust for header height if needed
+//         behavior: 'smooth'
+//       });
+//     }
+//   });
+// });
 // slider effect 
 
 let currentIndex = 0;
