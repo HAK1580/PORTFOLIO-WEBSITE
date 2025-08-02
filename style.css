@@ -8,8 +8,8 @@
 } */
  body {
      background-color: black;  
-        color: white;
-        overflow-x: hidden;
+    color: rgba(255, 255, 255, 0.959);
+    overflow-x: hidden;
  }
 
  nav {
