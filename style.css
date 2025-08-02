@@ -368,30 +368,18 @@
      position: absolute;
 
 
-<<<<<<< HEAD
-     animation: animatex 8s linear  infinite;
-=======
      animation: animatex 4s linear alternate infinite;
->>>>>>> 101f3692774cd493426170180ca0a7e30e07b201
 
  }
 
  @keyframes animatex {
      from {
-<<<<<<< HEAD
-         left: -100%;
-=======
          left: 0;
->>>>>>> 101f3692774cd493426170180ca0a7e30e07b201
 
      }
 
      to {
-<<<<<<< HEAD
-         left: 100%
-=======
          left: 37%;
->>>>>>> 101f3692774cd493426170180ca0a7e30e07b201
      }
 
  }
