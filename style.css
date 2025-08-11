@@ -7,8 +7,8 @@
   scroll-behavior: smooth;
 }
  body {
-     background-color:black;
-    color: rgba(255, 255, 255, 0.959);
+      background-color:black;
+         color: rgba(255, 255, 255, 0.959);
     overflow-x: hidden;
  }
 
@@ -369,8 +369,6 @@
      gap: 91px;
      width: 65vw;
      position: absolute;
-
-git add 
      animation: animatex 4s linear alternate infinite;
 
  }
