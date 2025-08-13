@@ -1,0 +1,10 @@
+.color-red{
+    color:red ;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.light-red{
+color: #ff4c60;
+}

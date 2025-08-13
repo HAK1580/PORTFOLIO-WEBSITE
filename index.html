@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="utility.css">
 </head>
 
 <body>
     <nav>
-
         <ul>
             <li><a class="nav-link" href="#home">Home</a> </li>
-            <li><a class="nav-link" href="#contacts">Contacts</a> </li>
+            <li><a class="nav-link" href="#about">About</a> </li>
+            <li><a class="nav-link" href="#skills">Skills</a> </li>
             <li><a class="nav-link" href="#projects">Projects</a> </li>
-            <li><a class="nav-link" href="assets/resume.pdf" download>Resume</a> </li>
+            <li><a target="_blank" class="nav-link" href="assets/CV/resume.pdf">Resume</a> </li>
+            <li><a class="nav-link" href="#contacts">Contact </a> </li>
         </ul>
     </nav>
     <!-- nav ends here now my main content below -->
@@ -31,77 +37,121 @@
                 <br>
                 modern design and smooth user experiences.
             </P>
-
+            <div class="hero-btn-div">
+                <a href="assets//CV/resume.pdf" class="hero-btn" download>Download CV </a>
+                <a target="_blank" href="https://github.com/HAK1580" class="hero-btn">Visit Github </a>
+            </div>
         </div>
-        <img id="imghero" width="335px" src="heroimg.png">
+        <img id="imghero" width="335px" src="assets/imges/heroimg.png">
+
     </div>
+
     <div class="space">
 
     </div>
-    <!-- Here starts the projects section  -->
+    <!-- Here starts the about section  -->
+    <div class="about" id="about">
+        <h1>About&nbsp;Me </h1>
+        <div class="about-bio">
+            <img width="500" src="assets/imges/dextars computer lab.png" alt="">
+            <p>I am M. Hassan Ali Khan, a Junior Frontend Developer with nearly 1 year of experience building responsive
+                and user-friendly web applications. I have developed projects including <br>
+                <span class="color-red">
+                    e-commerce website, weather apps, and UI clones like Netflix,</span> calculator app.
 
-    <div class="projects-section" id="projects">
-        <h1 class="pmargin">PROJECTS</h1>
-        <div class="slider-container">
-            <button class="slider-btn left" onclick="scrollSlider(-1)">&#10094;</button>
-            <div class="project-slider">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="netflix ss.jpg" alt="Netflix Clone">
-                    <h3>PROJECT #1</h3>
-                    <p>Netflix UI Clone using HTML, CSS & JS</p>
-                    <div class="buttons">
-                        <a class="btn" href="https://stellar-piroshki-d94f4f.netlify.app/" target="_blank">LIVE DEMO</a>
-                        <a class="btn code" href="https://github.com/hak1580/NETFLIX-CLONE" target="_blank">CODE</a>
-                    </div>
-                </div>
+                With a strong command of HTML, CSS, and a solid understanding of <span class="color-red"> JavaScript and
+                    Tailwind CSS</span> , I am focused on expanding
+                my expertise towards becoming a Fullstack Developer and currently enhancing my skills by learning <span
+                    class="color-red">React.js.</span>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img height="65%" src="calculater app.PNG" alt="Calculator App">
-                    <h3>PROJECT #2</h3>
-                    <p>Calculator App using HTML, CSS & JS</p>
-                    <div class="buttons">
-                        <a class="btn" href="https://calculatorapphak1580.netlify.app/" target="_blank">LIVE DEMO</a>
-                        <a class="btn code" href="https://github.com/HAK1580/CALCULATER-APP" target="_blank">CODE</a>
-                    </div>
-                </div>
+                I am enthusiastic about delivering clean, efficient code and creating high-quality digital experiences
+                that meet client needs.
+            </p>
+        </div>
+    </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img height="66%" src="perfumestore.PNG" alt="Perfume Store">
-                    <h3>PROJECT #3</h3>
-                    <p>Perfume Store Website with HTML, CSS & JS</p>
-                    <div class="buttons">
-                        <a class="btn" href="https://ecentraperfumes.netlify.app" target="_blank">LIVE DEMO</a>
-                        <a class="btn code" href="https://github.com/HAK1580/perfumestore" target="_blank">CODE</a>
+
+    <!-- Skills Section  -->
+    <div class="space">
+    </div>
+    <div id="skills" class="skills">
+        <h1>Tech Stack </h1>
+        <div class="skill-box ">
+            <div class="stackpic">
+
+                <img width="420" height="170" src="assets/imges/Top-Tech-Stack-Examples.png" alt="">
+            </div>
+            <div class="skill-imgs">
+                <img width="85" src="assets/svg/html.svg" alt="">
+                <img width="85" src="assets/svg/css.svg" alt="">
+                <img class="js" width="70" height="80" src="assets/svg/javascript.png" alt="">
+                <img width="85" src="assets/svg/tailwind-css.svg" alt="">
+                <img width="85" src="assets/svg/react-js.svg" alt="">
+                <img width="85" src="assets/svg/github.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- Projects SECTION -->
+    <div class="space"> </div>
+    <div id="projects"  class="projects-section">
+        <h1 class="flex-center">Projects</h1>
+        <div class="projects-div">
+
+            <div class="project-1 project-box">
+                <img height="280" style="border-radius: 90px;" width="343" src="assets/imges/netflix ss.jpg" alt="">
+
+                <div class="project-des">
+                    <h2 class="flex-center">Netflix UI Clone</h2>
+                    <p> Built a responsive Netflix UI clone using HTML, CSS, and Vanilla JavaScript.A clone which helped
+                        me build understanding of coverting UI designs into real codes</p>
+
+                    <div class="project-btn-div">
+                        <a target="_blank" href="https://stellar-piroshki-d94f4f.netlify.app/" class="project-btn">
+                            live Demo </a>
                     </div>
                 </div>
             </div>
-            <button class="slider-btn right" onclick="scrollSlider(1)">&#10095;</button>
+
+            <div class="project-2 project-box">
+                <img height="280" style="border-radius: 90px;" width="343" src="assets/imges/perfumestore.PNG" alt="">
+
+                <div class="project-des">
+                    <h2 class="flex-center">Landing Page</h2>
+                    <p>Build a simple and Responsive Landing page for a perfume store.Whatsapp Integration was added
+                        which makes this Elegant Design more attaractive </p>
+
+                    <div class="project-btn-div">
+                        <a target="_blank" href="https://ecentraperfumes.netlify.app/" class="project-btn">
+                            Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-3 project-box">
+                <img height="280" style="border-radius: 90px;" width="343" src="assets/imges/calculater app.PNG" alt="">
+
+                <div class="project-des">
+                    <h2 class="flex-center">Calculator App</h2>
+                    <p>Created a Calculator App using HTML, CSS, and JavaScript.
+                        Supports basic arithmetic with a clean, responsive design.
+                        Ensures smooth functionality across devices</p>
+
+                    <div class="project-btn-div">
+                        <a target="_blank" href="https://calculatorapphak1580.netlify.app/" class="project-btn">
+                            Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+    <!-- ADD SLIDER FUNCTION IN PROJECTS AND ANIMATIONS ON SCROLL AND THATS ALL DONE -->
 
 
+    <!--Contacts Section -->
 
-
-    <!-- PROJECTS DONE HERE NOW ADD tech stacks BELOW AND INTERACTIVITY WITH JS  -->
-
-    <div class="skills">
-        <h3> TECH STACK </h3>
-        <div class="techstack">
-            <img width="91px" src="svg/html.svg" alt="img not found ">
-            <img width="91px" src="svg/css.svg" alt="img not found ">
-            <img width="71px" height="78px" src="svg/javascript.png" alt="img not found ">
-            <img width="85px" src="svg/react-js.svg" alt="img not found ">
-            <img width="85px" src="svg/tailwind-css.svg" alt="img not found ">
-
-        </div>
-    </div>
-
-    <!-- techskills done here now going for contacts  -->
     <div style="height: 30vh;" class="space"> </div>
-
     <div class="line">
         <hr>
 
@@ -111,20 +161,20 @@
             style="text-align: center; font-size: 2.7rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgba(255, 255, 255, 0.938); ">
             CONTACT ME </h1>
         <div class="email">
-            <img width="40" src="svg/email.png">
+            <img width="40" src="assets/svg/email.png">
             Email Address : &nbsp; <span id="espan"> aliofficial1580630@gmail.com </span>
 
 
         </div>
         <div class="github">
-            <img width="47" src="svg/github.svg">
+            <img width="47" src="assets/svg/github.svg">
             Github : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="https://github.com/HAK1580"> Visit
                 HAK1580</a>
 
 
         </div>
         <div class="linkdin">
-            <img width="55" src="svg/linkedin.svg">
+            <img width="55" src="assets/svg/linkedin.svg">
             LINKEDIN : &nbsp;&nbsp; <a target="_blank"
                 href="https://www.linkedin.com/in/muhammad-hassan-ali-khan-49a965281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 Visit Profile on LINKEDIN</a>
@@ -132,7 +182,7 @@
 
         </div>
         <div class="tiktok">
-            <img width="52" src="svg/tiktok.svg">
+            <img width="52" src="assets/svg/tiktok.svg">
             TikTok : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="https://www.tiktok.com/@codewithme._.01">
                 View Work on TikTok</a>
 
