@@ -357,6 +357,10 @@ footer{
 }
 .skills{
     /* border: 2px solid red; */
+
+}
+.spacebox{
+height: 3rem;
 }
 .skills h1{
     font-family: "Montserrat", sans-serif;
