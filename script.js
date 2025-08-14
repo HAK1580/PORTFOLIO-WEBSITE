@@ -35,3 +35,23 @@ window.addEventListener("scroll", function () {
     nav.classList.remove("scrolled");
   }
 });
+// PROJECT SLIDER FUNCTIONALITY 
+const parent = document.querySelector(".projects-div");
+const children = document.querySelectorAll(".project-box");
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+const box_width=children[0].offsetWidth + 420;
+
+next.addEventListener("click",()=>{
+  parent.scrollBy({
+    left: box_width,
+    behavior:"smooth"
+  })
+})
+prev.addEventListener("click",()=>{
+  parent.scrollBy({
+    left:-box_width,
+    behavior:"smooth"
+  })
+})
