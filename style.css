@@ -476,7 +476,7 @@ footer {
 }
 
 .project-box img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .project-box {
