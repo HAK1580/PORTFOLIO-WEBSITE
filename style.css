@@ -548,5 +548,11 @@ footer {
 .arrow:hover {
     stroke: red;
 }
+.project-5 h2 {
+    margin: 0.3rem 2.97rem;
+}
+.project-5 img{
+  object-fit: cover;
+}
 
 /* all updated till here  */
