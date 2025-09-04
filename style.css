@@ -553,6 +553,7 @@ footer {
 }
 .project-5 img{
   object-fit: cover;
+  width: 99.99%;
 }
 
 /* all updated till here  */
