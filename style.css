@@ -475,9 +475,6 @@ footer {
     cursor: pointer;
 }
 
-.project-box img {
-    object-fit: contain;
-}
 
 .project-box {
     border: 1px solid rgba(255, 255, 255, 0.866);
@@ -552,8 +549,11 @@ footer {
     margin: 0.3rem 2.97rem;
 }
 .project-5 img{
-  object-fit: cover;
-  width: 99.99%;
+    width: 99.99%;
 }
+.project-box img{
+    object-fit: cover;
+    width: 100%;
 
+}
 /* all updated till here  */
