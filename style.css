@@ -546,7 +546,9 @@ footer {
     stroke: red;
 }
 .project-5 h2 {
-    margin: 0.3rem 2.97rem;
+    margin: 1.3rem 0.1rem;
+    width: 23vw;
+    /* border: 2px solid red ; */
 }
 .project-5 img{
     width: 99.99%;
