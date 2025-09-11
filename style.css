@@ -20,12 +20,15 @@ a {
 }
 
 nav {
-    animation: navdown 1.15s ease-in;
+    /* animation: navdown 1.15s ease-in; */
     /* border: 2px solid red ; */
-    padding: 1.3rem 0px;
+    padding: 1.4vw 0px;
     margin: 1.2rem auto;
+    /* margin-left:14rem; */
     position: sticky;
     top: 1px;
+    left: 15rem;
+    max-width: 70vw;
     z-index: 1;
     background-color: transparent;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -48,8 +51,8 @@ nav ul {
 
 .nav-link {
     /* border: 2px solid red ; */
+    
     padding: 1rem 1rem;
-    font-size: 1.12rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: capitalize;
     letter-spacing: 1.1px;
@@ -59,7 +62,7 @@ nav ul li a {
     color: white;
     text-decoration-line: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.3vw;
     /* Menu links (Home, Projects, Contact...) */
     font-weight: bold;
     /* Slightly bold for visibility */
@@ -94,12 +97,15 @@ nav ul li a:hover::after {
     display: flex;
     gap: 2rem;
 }
+.heromera{
+    
+}
 
 .hero-btn {
-    padding: 0.85rem 2.85rem;
+    padding: 0.9vw 2vw;
     border: 1px solid black;
     border-radius: 10px;
-    font-size: 1.15rem;
+    font-size:1.35vw;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
@@ -154,27 +160,16 @@ nav ul li a:hover::after {
 }
 
 .hero {
-    animation: headfromleft 1s ease-in;
+    /* animation: headfromleft 1s ease-in; */
     /* border: 2px solid white; */
-    width: 67vw;
+    max-width: 100%;
 }
 
 
-#imghero {
-    animation: headfromright 0.9s ease-in;
-    filter: contrast(1.30);
-    position: absolute;
-    right: -3px;
-    top: -3px;
-    border: 2px solid black;
-    border-radius: 50%;
-
-
-}
 
 .hero h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+    font-size: 1.8vw;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
@@ -185,7 +180,7 @@ nav ul li a:hover::after {
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 52px;
+    font-size: 3.9vw;
     font-weight: 700;
     color: #ffffff;
     /* line-height: 65px; */
@@ -198,7 +193,7 @@ nav ul li a:hover::after {
 .hero h3 {
     margin: 12px auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 34px;
+    font-size: 2.7vw;
     font-weight: 800;
     color: #ffffff;
 
@@ -217,7 +212,7 @@ nav ul li a:hover::after {
     display: inline-block;
     color: #ff4c60;
     font-weight: bold;
-    animation: blink 0.8s infinite;
+    /* animation: blink 0.8s infinite; */
     font-size: 34px;
 }
 
@@ -399,7 +394,7 @@ footer {
 .skill-imgs {
     display: flex;
     gap: 4rem;
-    animation: lefttoright 10s linear reverse infinite;
+    /* animation: lefttoright 10s linear reverse infinite; */
 
 }
 
@@ -558,4 +553,101 @@ footer {
     width: 100%;
 
 }
-/* all updated till here  */
+#imghero {
+    /* animation: headfromright 0.9s ease-in; */
+    filter: contrast(1.30);
+    position: absolute;
+    right: -3px;
+    top: -10px;
+    object-fit: cover;
+    
+    border: 2px solid black;
+    border-radius: 50%;
+
+    display: block;
+    max-width:30vw;
+
+}
+@media only screen and (max-width:768px){
+    .hero h1{
+        font-size:7vw;
+    }
+    .hero h3{
+        font-size:5.5vw;
+        
+    }
+    .hero-btn{
+        padding:2.5vw 4vw;
+        font-size: 4vw;
+    }
+    #imghero{
+        display: none;
+        /* max-width: 40%; */
+    }
+    .hero h2{
+        font-size: 0.7rem;
+    }
+    .hero{
+        /* gap: 4rem; */
+    max-width: 100%;
+    }
+    .container1{
+        /* border: 2px solid red ; */
+        display: flex;
+        justify-content: center;
+        margin: 0px auto auto 1.5rem ;
+        /* margin-left: 10rem; */
+        display: block;
+        max-width: 100%;
+    }
+    nav{
+        max-width: 100%;
+        display: block;
+        position: relative;
+    }
+    .nav ul{
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        gap: 1.1vw;
+    }
+    .nav{
+        position: absolute;
+        top: 3.1rem;
+        left: 3rem;
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+        max-width: 100%;  
+    }
+    .hamburger{
+           position: absolute;
+            right: 0;
+            z-index: 100;
+            top: 0.1rem;
+            right: -2rem;
+            opacity: 1;
+            width: 40px;
+        
+    
+     }
+    
+}
+@media only screen and (min-width:768px){
+    .hamburger{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.nav{
+    /* border: 2px solid red ; */
+    position: relative;
+    display: none;
+
+}
+.hamburger{
+    opacity:1;
+}

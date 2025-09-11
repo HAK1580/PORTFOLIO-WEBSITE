@@ -22,8 +22,9 @@ function typeLine2() {
     setTimeout(typeLine2, 120);
   }
 }
+typeLine1();
 
-window.onload = typeLine1;
+
 
 
 // JavaScript for scroll effect
@@ -54,4 +55,24 @@ prev.addEventListener("click",()=>{
     left:-box_width,
     behavior:"smooth"
   })
+})
+
+let hamburger=document.querySelector(".hamburger");
+let ham_nav=document.querySelector(".nav");
+let ishamOpen=false
+hamburger.addEventListener("click",()=>{
+  if(!ishamOpen){
+
+    hamburger.src="assets/svg/cross.svg";
+    ham_nav.style.display="block";
+    ishamOpen=true;
+  }
+  else{
+    hamburger.src="assets/svg/hamburger.svg";
+    ham_nav.style.display="none";
+    ishamOpen=false;
+
+  }
+
+  
 })
